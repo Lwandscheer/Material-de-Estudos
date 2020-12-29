@@ -5,10 +5,13 @@ class Calc:
         self.valorA = valorA
         self.valorB = valorB
 
+    # Métodos da classe Calc:
+    # Método de soma
     def somar(self):
-        soma = self.valorA + self.valorB
+        soma = self.valorA + self.valorB  # Para retornar um atributo, use o self.atributo
         print(soma)
 
+    # Método de subtração
     def subtrair(self):
         loop = True
         while loop:
@@ -29,6 +32,7 @@ class Calc:
                 print('Valor incorreto. Tente novamente...')
 
 
+# instanciando objeto e interagindo com métodos:
 ex1 = Calc(5, 10)
 ex1.somar()
 ex1.subtrair()
