@@ -13,23 +13,17 @@ class Calc:
 
     # Método de subtração
     def subtrair(self):
+        varAB = self.valorA - self.valorB
+        varBA = self.valorB - self.valorA
+        varAA = self.valorB - self.valorB
+        varBB = self.valorA - self.valorA
+        keys = {'ab': varAB, 'ba': varBA, 'aa': varAA, 'bb': varBB}
         loop = True
         while loop:
             chave = input('>> Escolha o conjunto da subtração: ')
-            if chave == 'ab':
-                print(self.valorA - self.valorB)
-                loop = False
-            elif chave == 'ba':
-                print(self.valorB - self.valorA)
-                loop = False
-            elif chave == 'bb':
-                print(self.valorB - self.valorB)
-                loop = False
-            elif chave == 'aa':
-                print(self.valorA - self.valorA)
-                loop = False
-            else:
-                print('Valor incorreto. Tente novamente...')
+            value = keys.get(chave)
+            print(value)
+            loop = False
 
     # Método de multiplicação
     def multiplicação(self):
@@ -47,11 +41,11 @@ class Calc:
                 print(self.valorB / self.valorA)
                 loop = False
             else:
-                print('Impossivel dividir por zero...')
+                print('Valor inválido. Tente novamente...')
 
 
 # instanciando objeto e interagindo com métodos:
-# Evitar utilizar 0 devido ao método divisão.
+# Evitar utilizar 0 (como valorA) devido ao método divisão.
 ex1 = Calc(5, 10)
 ex1.somar()
 ex1.subtrair()
