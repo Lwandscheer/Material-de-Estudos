@@ -16,23 +16,43 @@ class Calc:
         loop = True
         while loop:
             chave = input('>> Escolha o conjunto da subtração: ')
-            if chave == 'AB':
+            if chave == 'ab':
                 print(self.valorA - self.valorB)
                 loop = False
-            elif chave == 'BA':
+            elif chave == 'ba':
                 print(self.valorB - self.valorA)
                 loop = False
-            elif chave == 'BB':
+            elif chave == 'bb':
                 print(self.valorB - self.valorB)
                 loop = False
-            elif chave == 'AA':
+            elif chave == 'aa':
                 print(self.valorA - self.valorA)
                 loop = False
             else:
                 print('Valor incorreto. Tente novamente...')
 
+    # Método de multiplicação
+    def multiplicação(self):
+        print(self.valorA * self.valorB)
+
+    # Método de divisão
+    def divisão(self):
+        loop = True
+        while loop:
+            chave = input('>> Escolha o conjunto da divisão: ')
+            if chave == 'ab':
+                print(self.valorA / self.valorB)
+                loop = False
+            elif chave == 'ba':
+                print(self.valorB / self.valorA)
+                loop = False
+            else:
+                print('Impossivel dividir por zero...')
+
 
 # instanciando objeto e interagindo com métodos:
+# Evitar utilizar 0 devido ao método divisão.
 ex1 = Calc(5, 10)
 ex1.somar()
 ex1.subtrair()
+ex1.divisão()
