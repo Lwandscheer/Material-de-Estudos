@@ -70,7 +70,9 @@ lista_ordenada = sorted(lista3)  # A função sorted cria uma variação da list
 print(lista_ordenada)  # A nova lista feita na função sorted necessita de uma variável para transcreve-lá
 
 
-# RETOMANDO DETERMINADOS VALORES EM UMA LISTA QUANTIFICADA:
+# RETOMANDO DETERMINADOS VALORES EM UMA LISTA:
 print(min(lista_numerica))  # Procura o menor valor dentro da lista.
 print(max(lista_numerica))  # Procura o maior valor dentro da lista.
 print(sum(lista_numerica))  # Soma os valores dentro da lista.
+
+print(lista.index('Física'))  # Mostra onde se encontra o argumento colocado dentro da função index.
