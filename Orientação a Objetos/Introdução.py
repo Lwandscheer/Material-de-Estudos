@@ -1,7 +1,7 @@
 # OBJETOS
 # Todo tipo de dado em python é um objeto, que possui suas próprias características e métodos.
-texto = 'Hello, world!'  # Texto é um objeto da classe Str
-lista = [12, 14, 64, 304]  # lista é um objeto da classe list
+texto = str('Hello, world!')  # Texto é um objeto da classe Str
+lista = list([12, 14, 64, 304])  # lista é um objeto da classe list
 
 # MÉTODOS
 # Métodos são ações ou funções estabelecidas dentro de uma determinada classe que interagem com seus objetos.
